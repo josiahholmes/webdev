@@ -1,0 +1,69 @@
+
+/* classes */ 
+
+.ui-section {
+    display: grid;
+    height: 500px;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 60px;
+    grid-template-columns: repeat(10,100px);
+    grid-template-rows: repeat(20,25px);
+    box-shadow: 0px 10px 20px -10px black;
+}
+
+.user-btn {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 6px;
+    padding: 5px 15px;
+    font-family: 'Muli', sans-serif;
+    color: red;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 500ms ease;
+}
+
+.user-btn:hover {
+    color: white;
+    background-color: red;
+}
+
+/* ids */
+
+#left {
+    grid-column: 1 / 6;
+    grid-row: 1 / 21;
+    background-color: blue;
+}
+
+#marquee {
+    grid-column: 6 / 11;
+    grid-row: 1 / 5;
+    background-color: pink;
+    color: #f5f5f8;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: 2px 2px 8px red;
+    line-height: 100px;
+    font-size: 60px;
+    font-family: 'Pacifico', cursive;
+    background:url("../images/popcorn.jpg");
+    background-size: contain;
+}
+
+#user-form {
+    grid-column: 6 / 11;
+    grid-row: 5 / 19;
+    background-color: red;
+}
+
+#user-options {
+    grid-column: 6 / 11;
+    grid-row: 19 / 21;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
