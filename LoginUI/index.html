@@ -8,19 +8,32 @@
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:200" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-    <script type="text/javascript" src="scripts/script.js"></script>
 </head>
 <body>
     <div class="ui-section">
         <div id="left"></div>
         <div id="marquee">Marquee</div>
-        <div id="user-options">
-            <button class="user-btn">LOGIN</button>
-            <button class="user-btn">SIGN UP</button>
-        </div>
         <div id="user-form">
-            
+            <form id="login-form">
+                <input class="login-input" type="text" id="login-user" placeholder="Username">
+                <input class="login-input" type="password" id="login-password" placeholder="Password">
+                <button class="user-btn" onclick="userLogin();">LOGIN</button>
+            </form>
+            <form id="register-form">
+                <input class="register-input" type="text" id="reg-user" placeholder="Username">
+                <input class="register-input" type="password" id="reg-password" placeholder="Password">
+                <input class="register-input" type="password" id="reg-reenter-password" placeholder="Re-Enter Password">
+                <button class="user-btn">REGISTER</button>
+            </form>
+        </div>
+        <div id="signup-block">
+            <button id="signup-btn">Need an account? SIGN UP</button>
+        </div>
+        <div id="info">
+            Made by Josiah Holmes
         </div>
     </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>

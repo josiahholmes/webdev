@@ -1,5 +1,35 @@
+/* tags */
 
 /* classes */ 
+
+.login-input {
+    width: 90%;
+    margin: 10px auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+    outline: none;
+    font-size: 25px;
+    margin-left: 25px;
+}
+
+.login-input:focus {
+    border: 2px solid red;
+}
+
+.register-input {
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+    outline: none;
+    font-size: 24px;
+}
+
+.register-input:focus {
+    border: 2px solid red;
+}
 
 .ui-section {
     display: grid;
@@ -33,10 +63,26 @@
 
 /* ids */
 
+#info {
+    grid-column: 6 / 11;
+    grid-row: 19 / 21;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    font-family: 'Muli', sans-serif;
+}
+
 #left {
     grid-column: 1 / 6;
     grid-row: 1 / 21;
-    background-color: blue;
+    background-color: darkred;
+}
+
+#login-form {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 70px;
+    margin-right: 15px;
 }
 
 #marquee {
@@ -52,18 +98,46 @@
     font-family: 'Pacifico', cursive;
     background:url("../images/popcorn.jpg");
     background-size: contain;
+    box-shadow: 0px 10px 20px -10px black;
+}
+
+#register-form {
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 25px;
+    margin-right: 22px;
+}
+
+#signup-block {
+    grid-column: 6 / 11;
+    grid-row: 17 / 19;
+    margin-top: 15px;
+}
+
+#signup-btn {
+    font-size: 16px;
+    float: right;
+    margin-right: 10px;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 6px;
+    padding: 5px 5px;
+    font-family: 'Muli', sans-serif;
+    color: red;
+    cursor: pointer;
+    transition: 500ms ease;
+}
+
+#signup-btn:hover {
+    color: white;
+    background-color: red;
 }
 
 #user-form {
     grid-column: 6 / 11;
-    grid-row: 5 / 19;
-    background-color: red;
-}
-
-#user-options {
-    grid-column: 6 / 11;
-    grid-row: 19 / 21;
+    grid-row: 5 / 17;
     text-align: center;
     vertical-align: middle;
-    line-height: 50px;
 }
