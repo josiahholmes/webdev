@@ -1,27 +1,23 @@
 $(document).ready(function() {
     $('#register-form').css('display', 'none');
 
-    var userBase = [];
     var regForm = document.getElementById('register-form');
     var loginForm = document.getElementById('login-form');
 
-    function userExists(uname) { 
-        if (userBase.hasOwnProperty(uname)) 
-            return true;
-        return false;
-    }
-    
-    function validateUser(uname) {
-        return userBase.hasOwnProperty(uname);
-    }
-    
-    function validatePassword(uname, passwd) {
-        return (userBase[uname] == passwd);
-    }
-    
-    function addUser(uname, passwd) {
-        userBase[uname] = passwd;
+    function makeUser(uname, passwd) {
+        localStorage.setItem("user", uname);
+        localStorage.setItem("pass", passwd);
         alert("Registration successful!");
+    }
+
+    function checkIfUserExists(uname) { 
+        var user = localStorage.getItem("user");
+        return (uname == user);
+    }
+    
+    function validatePassword(passwd) {
+        var pass = localStorage.getItem("pass");
+        return (passwd == pass);
     }
     
     $('#signup-btn').on('click', function(e) {
@@ -34,15 +30,15 @@ $(document).ready(function() {
         var loginUsername = document.getElementById('login-user').value;
         var loginPassword = document.getElementById('login-password').value;
 
-        if (validateUser(loginUsername)) {
-            if (validatePassword(loginUsername, loginPassword)) {
+        if (checkIfUserExists(loginUsername)) {
+            if (validatePassword(loginPassword)) {
                 alert("Login successful!");
             }
             else {
                 alert("Incorrect password!");
             }
         } else {
-            alert("Incorrect username!");
+            alert("User not found! Did you create an account?");
         }
     }
 
@@ -54,7 +50,7 @@ $(document).ready(function() {
         if (regUsername == "") { 
             alert("Please provide a username!"); 
         }
-        else if (userExists(regUsername)) {
+        else if (checkIfUserExists(regUsername)) {
             alert("Username is taken!");
         }
         else if (regPassword != regReEnterPassowrd) {
@@ -64,7 +60,7 @@ $(document).ready(function() {
             alert("Password is too short! Try a length of 8 or more.");
         }
         else {
-            addUser(regUsername, regPassword);
+            makeUser(regUsername, regPassword);
         }
     }
 });
