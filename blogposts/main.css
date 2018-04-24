@@ -1,0 +1,32 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: url(https://images4.alphacoders.com/556/556532.jpg);
+}
+
+h2, p {
+    color: #740001;
+}
+
+h4 {
+    letter-spacing: 3px; 
+    text-transform: uppercase;
+    color: #ae0001;
+}
+
+h2 + p {
+    border-left: 7px solid #740001;
+    padding-left: 10px;
+}
+
+hr {
+    border: 1px solid #740001;
+}
+
+.container {
+    max-width: 700px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #eeba30;
+    border: 20px solid #740001;
+}
