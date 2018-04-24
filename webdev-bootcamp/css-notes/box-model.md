@@ -14,6 +14,7 @@
     margin: 20px 40px 500px 100px;
 }
 ```
+
 * **Border** - the edges around an element. Syntax is: width | style | color. Or, 'border' may be used as a shorthand. 
 
 ```css
