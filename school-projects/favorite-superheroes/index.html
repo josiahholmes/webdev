@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marvel Mania!</title>
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('a[href^="#"]').on('click', function(event) {
+                    var link = $(this.getAttribute('href'));
+                    if( link.length ) {
+                        event.preventDefault();
+                        $('html, body').stop().animate({
+                            scrollTop: link.offset().top
+                        }, 1000);
+                    }
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div class="navigation-div">
+            <p style="font-size: 14px;" id="josiahholmes">Designed by Josiah Holmes</p>
+            <p><b><i>Select A Marvel Hero Below!</i></b></p>
+            <div class="info-div">
+                <p class="navigation">
+                    <a href="#black-panther"><img src="black-panther.png" height=50 width=50 title="Black Panther"></a>
+                    <a href="#storm"><img src="storm.jpg" height=50 width=50 title="Storm"></a>
+                    <a href="#luke-cage"><img src="luke-cage.jpg" height=50 width=55 title="Luke Cage"></a>
+                    <a href="#miles-morales"><img src="miles-morales.jpg" height=50 width=50 title="Miles Morales (Spider-Man)"></a>
+                </p>
+                <center><a href="#main-page">MAIN</a></center>
+            </div>
+            <div class="bottom-border-div">
+                <img src="marvel-comics-banner.gif">
+            </div>
+        </div>
+        <div class="body-div" id="main-page">
+            <h1>Marvel Mania!</h1>
+            <h2>A Preview Of Some Of My Favorite Heroes from Marvel Comics</h2>
+            <center><img src="marvel-logo.png" height=200 width=500></center>
+            <h3>In recent years, Marvel has made quite a name for itself. In 2008, Marvel Studios released <i>Iron Man</i>, starting the Marvel Cinematic Universe. Aside from the thirteen movies that have been released, Marvel Television has explored new endeavors, including ABC's <i>Marvel's Agents of S.H.I.E.L.D.</i>, and the Netflix hits <i>Daredevil</i>, <i>Jessica Jones</i>, and <i>Luke Cage</i>.</h3>
+            <h3>On this website, there are four heroes from the comics universe that I consider favorites. You can select a character name from the drop-down list to see a brief history of the character and their powers/abilities. Descriptions of their powers have been paraphrased from <a href="http://marvel.wikia.com" target="_blank">Marvel's wikia page</a>, where more can be learned about the heroes.</h3>
+        </div>
+        <div class="body-div" id="black-panther">
+            <h1>Black Panther</h1>
+            <h2><i>The King of Wakanda</i></h2>
+            <img src="black-panther-portrait.jpg" height=450 width=300 align="right" style="margin-right: 20px;">
+            <br/>
+            <p style="text-align: left; margin-left: 10px;"><b>Biography</b>: T'Challa, the son of T'Chaka, is the King of Wakanda, a fictional technologically-advanced African country untouched by colonization. Under the Panther Goddess, Bast, the Black Panthers have reigned as the rulers of Wakanda, governing their people and participating in diplomatic affairs. However, the Black Panther role isn't just royal in title. Each Black Panther is gifted with certain gifts after eating a special heart-shaped herb which enhances their abilities. T'Challa is the current Black Panther, but is able to access the histories of previous Black Panthers, including his father and sister, Shuri, who was a Black Panther at one point in history.</p>
+            <p style="text-align: left; margin-left: 10px;"><b>Powers/Abilities</b>:</p>
+            <ul style="text-align: left; margin-left: 10px;">
+                <li><b>Black Panther Knowledge</b>: The ability to use the knowledge and strength of past Black Panthers.</li>
+                <li><b>Superhuman Acute Senses</b>: The ability to have enhanced versions of the known human senses.</li>
+                <li><b>Superhuman Strength</b>: The ability to have enhanced strength beyond normal human capability.</li>
+                <li><b>Superhuman Speed</b>: The ability to move at an extraordinary speed.</li>
+                <li><b>Superhuman Stamina</b>: The ability to eliminate normal fatigue.</li>
+            </ul>
+        </div>
+        <div class="body-div" id="storm">
+            <h1>Storm</h1>
+            <h2><i>Pillar of the X-Men</i></h2>
+            <img src="storm-portrait.png" height=450 width=300 align="right" style="margin-right: 20px;">
+            <br/>
+            <p style="text-align: left; margin-left: 10px;"><b>Biography</b>: One of the households names in Marvel's <i>X-Men</i> titles, Ororo Munroe lived her early years as a pickpocket in Cairo in order to fend for herself after the death of her parents. Descending from a line of priestesses, Ororo learned that she had the ability to use magic, and soon discovered that she could manipulate the weather. In her teenage years, she saved T'Challa, who would become the Black Panther, from potential kidnappers. They felt a mutual connection, but T'Challa's duties as a prince prevented further development. Years later, she fought against a fellow weather manipulator known as Deluge. With the help of the X-Men, Ororo vanquished the foe, but wasn't recruited for the X-Men until later when Charles Xavier reached out to her and other mutants to save his team. Storm has made a name for herself, eventually becoming the leader of the X-Men for a time.</p>
+            <p style="text-align: left; margin-left: 10px;"><b>Powers/Abilities</b>:</p>
+            <ul style="text-align: left; margin-left: 10px;">
+                <li><b>Atmokinesis</b>: Also known as weather manipulation.</li>
+                <li><b>Telepathic Resistance</b>: The ability to resist telepathic powers and abilities. This ability gives Storm the advantage of have strong willpower.</li>
+                <li><b>Earth Link</b>: Due to her atmokinesis, Storm has a special connection to the Earth and its biosphere.</li>
+                <li><b>Energy Vision</b>: The ability to see the physical world and all within it as energy.</li>
+                <li><b>Resistance</b>: The ability to withstand both extreme temperature degrees.</li>
+            </ul>
+        </div>
+        <div class="body-div" id="luke-cage">
+            <h1>Luke Cage</h1>
+            <h2><i>Defender of New York</i></h2>
+            <img src="luke-cage-portrait.jpg" height=450 width=300 align="right" style="margin-right: 20px;">
+            <br/>
+            <p style="text-align: left; margin-left: 10px;"><b>Biography</b>: Wrongfully imprisoned for a crime he didn't commit, Luke Cage is recruited to undergo a dangerous cellular regeneration experiment that takes inspiration from the same experiment done on Steve Rogers, who later became Captain America. When the experiment goes awry, Luke emerges with superhuman strength and durable skin. Escaping his prison life in favor of returning to his home in New York, Luke soon discovers that his abilities could be used to take down criminals while making money on the side. In recent history, he has teamed up with Danny Rand, the alter ego of Iron Fist. Together, they fight crime and run the business Heroes for Hire.</p>
+            <p style="text-align: left; margin-left: 10px;"><b>Powers/Abilities</b>:</p>
+            <ul style="text-align: left; margin-left: 10px;">
+                <li><b>Invulnerability</b>: The ability to have unbreakable skin and withstand abnormal amounts of pressure.</li>
+                <li><b>Accelerated Healing Factor</b>: The ability to recover from injuries quickly.</li>
+                <li><b>Superhuman Strength</b>: The ability to have enhanced strength beyond normal human capability.</li>
+                <li><b>Superhuman Speed</b>: The ability to move at an extraordinary speed.</li>
+                <li><b>Superhuman Stamina</b>: The ability to eliminate normal fatigue.</li>
+            </ul>
+        </div>
+        <div class="body-div" id="miles-morales">
+            <h1>Miles Morales</h1>
+            <h2><i>The New York Webslinger</i></h2>
+            <img src="miles-morales-portrait.jpg" height=450 width=300 align="right" style="margin-right: 20px;">
+            <br/>
+            <p style="text-align: left; margin-left: 10px;"><b>Biography</b>: In the Ultimate universe, fter his uncle, Aaron Davis, steals a radioactive spider from Oscorp, Miles Morales experiences the same phenomenon that turned Peter Parker into everyone's friendly neighborhood Spider-Man. For months, Miles didn't know if he wanted to be a superhero. It wasn't until after Peter Parker's death that Miles realized that "with greater power comes great responsibility." With his friend Ganke at his side, Miles is now the main Spider-Man in the Marvel universe, forging his own legacy while adjusting to life as a teenage superhero.</p>
+            <p style="text-align: left; margin-left: 10px;"><b>Powers/Abilities</b>:</p>
+            <ul style="text-align: left; margin-left: 10px;">
+                <li><b>Spider-Sense</b>: The ability to sense danger when it is present. Miles' ability is arguably stronger than Peter's, and may suggest that his spider-sense is somewhat precognitive in some situations.</li>
+                <li><b>Wall-Crawling</b>: The ability to climb walls using only one's fingertips and feet.</li>
+                <li><b>Superhuman Reflexes</b>: The ability to have enhanced reflexes beyond normal human capability.</li>
+                <li><b>Superhuman Durability</b>: The ability to have a tougher and more resistant body.</li>
+                <li><b>Superhuman Stamina</b>: The ability to eliminate normal fatigue.</li>
+            </ul>
+        </div>
+    </body>
+
+</html>
+

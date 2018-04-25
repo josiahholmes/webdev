@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inklings Writers' Society</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300" rel="stylesheet"> 
+        <script src="https://use.fontawesome.com/d6c4ee143c.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+              $('a').on('click', function(e){
+                  e.preventDefault();
+                  $('a').removeClass('active-nav');
+                  $(this).toggleClass('active-nav');
+              });
+                
+             $('a#home').on('click', function(){
+                 $('.body-div').fadeOut("slow");
+                 $("body").css("background-image", "url(pens_paper.jpg)");
+                 $('#home-section').fadeIn("slow");
+             });
+                
+             $('a#about').on('click', function(){
+                 $('.body-div').fadeOut("slow");
+                 $("body").css("background-image", "url(bookshelf.jpg)");
+                 $('#about-section').fadeIn("slow");
+             });   
+            
+             $('a#news').on('click', function(){
+                 $('.body-div').fadeOut("slow");
+                 $("body").css("background-image", "url(newspaper.jpg)");
+                 $('#news-section').fadeIn("slow");
+             });
+             
+             $('a#events').on('click', function(){
+                 $('.body-div').fadeOut("slow");
+                 $("body").css("background-image", "url(calendar_tacks.jpg)");
+                 $('#events-section').fadeIn("slow");
+             });
+                
+            $('a#contact').on('click', function(){
+                $('.body-div').fadeOut("slow");
+                $("body").css("background-image", "url(paper-planes.jpg)");
+                $('#contact-section').fadeIn("slow");
+            });
+            
+            $('#inklings').hover(function(){
+                $('#inklings').addClass('image-zoom');
+            }, function(){
+                $('#inklings').removeClass('image-zoom');
+            });
+                
+            $('#ouat-storybook').hover(function(){
+                $('#ouat-storybook').addClass('image-zoom');
+            }, function(){
+                $('#ouat-storybook').removeClass('image-zoom');
+            });
+            
+            $('#writing-seminar').hover(function(){
+                $('#writing-seminar').addClass('image-zoom');
+            }, function(){
+                $('#writing-seminar').removeClass('image-zoom');
+            });
+                
+            $('#book-festival').hover(function(){
+                $('#book-festival').addClass('image-zoom');
+            }, function(){
+                $('#book-festival').removeClass('image-zoom');
+            });
+                
+            $('#barnes-and-noble').hover(function(){
+                $('#barnes-and-noble').addClass('image-zoom');
+            }, function(){
+                $('#barnes-and-noble').removeClass('image-zoom');
+            });
+                
+            $('#jrr-tolkien').hover(function(){
+                $('#jrr-tolkien').addClass('image-zoom');
+            }, function(){
+                $('#jrr-tolkien').removeClass('image-zoom');
+            });
+            
+            $('#kapow').hover(function(){
+                $('#kapow').addClass('image-zoom');
+            }, function(){
+                $('#kapow').removeClass('image-zoom');
+            });
+                
+            $('#filmmaking').hover(function(){
+                $('#filmmaking').addClass('image-zoom');
+            }, function(){
+                $('#filmmaking').removeClass('image-zoom');
+            });
+                
+            $('#fantastic-beasts').hover(function(){
+                $('#fantastic-beasts').addClass('image-zoom');
+            }, function(){
+                $('#fantastic-beasts').removeClass('image-zoom');
+            });
+            
+            $('#on-writing').hover(function(){
+                $('#on-writing').addClass('image-zoom');
+            }, function(){
+                $('#on-writing').removeClass('image-zoom');
+            });
+                
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="navigation">
+            <div><h1 id="main-page-title">Inklings Writers' Society</h1></div>
+            <i class="fa fa-book fa-3x" aria-hidden="true" style="color: white;"></i><br/>
+            <br/><a href="#" id="home">HOME</a><br/>
+            <br/><a href="#" id="about">ABOUT</a><br/>
+            <br/><a href="#" id="news">NEWS</a><br/>
+            <br/><a href="#" id="events">EVENTS</a><br/>
+            <br/><a href="#" id="contact">CONTACT</a><br/>
+        </div>
+        
+        <div class="body-div" id="home-section">
+            <br/>
+            <center>
+                <h1>Welcome to the Inklings Homepage!</h1>
+                <video height="300" width="500" controls>
+                    <source src="The%20Power%20of%20Simple%20Words%20-%20Terin%20Izil.mp4" type="video/mp4">
+                </video>
+            </center>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat consectetur ante ultrices sollicitudin. Vivamus faucibus feugiat efficitur. Sed ac ex blandit, consequat mi ac, suscipit lacus. Donec in nisi est. Proin dui massa, porttitor vel semper vel, dictum sit amet odio. Nulla facilisi. Donec ut ligula sed urna molestie ornare in non urna. Nullam fermentum, leo sit amet malesuada pretium, ligula massa congue diam, vitae tincidunt libero turpis elementum nibh. Praesent vehicula ac lorem non dignissim. Vivamus venenatis tortor ac elementum aliquam. Donec in nulla a lorem dignissim fringilla sit amet id nibh. Etiam non elit arcu. Vivamus varius rutrum nibh sed eleifend. Aliquam mi eros, tincidunt a tellus eu, mattis lacinia mauris. Ut eleifend est risus, ut porttitor ante vehicula a. Ut tincidunt leo eu interdum ultrices.</p>
+            <p>Curabitur tempus tincidunt est, a efficitur purus volutpat at. Fusce gravida massa et orci dapibus commodo. Suspendisse dictum a neque ut posuere. Nulla accumsan lorem vitae ante finibus, vel congue ligula rutrum. Donec non tellus gravida, ultricies enim sit amet, dapibus metus. Nullam sem mi, laoreet at eros non, feugiat interdum nibh. Etiam euismod aliquam magna ac pulvinar. Ut non orci et orci rutrum malesuada. Aenean feugiat maximus sapien, in tincidunt justo dapibus et. Nunc pellentesque lacinia convallis. Duis rutrum justo lorem, at pretium nulla mattis vel. </p>
+        </div>
+        
+        <div class="body-div" id="about-section">
+            <br/>
+            <center>
+                <h1>About Our Organization</h1>
+                <h3><i>Inspired by C.S. Lewis and the Inklings</i></h3>
+                <img id="inklings" src="lewis-inklings-featured.jpg" width=250 align="right">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat consectetur ante ultrices sollicitudin. Vivamus faucibus feugiat efficitur. Sed ac ex blandit, consequat mi ac, suscipit lacus. Donec in nisi est. Proin dui massa, porttitor vel semper vel, dictum sit amet odio. Nulla facilisi. Donec ut ligula sed urna molestie ornare in non urna. Nullam fermentum, leo sit amet malesuada pretium, ligula massa congue diam, vitae tincidunt libero turpis elementum nibh. Praesent vehicula ac lorem non dignissim. Vivamus venenatis tortor ac elementum aliquam. Donec in nulla a lorem dignissim fringilla sit amet id nibh. Etiam non elit arcu. Vivamus varius rutrum nibh sed eleifend. Aliquam mi eros, tincidunt a tellus eu, mattis lacinia mauris. Ut eleifend est risus, ut porttitor ante vehicula a. Ut tincidunt leo eu interdum ultrices.</p>
+                <p>Curabitur tempus tincidunt est, a efficitur purus volutpat at. Fusce gravida massa et orci dapibus commodo. Suspendisse dictum a neque ut posuere. Nulla accumsan lorem vitae ante finibus, vel congue ligula rutrum. Donec non tellus gravida, ultricies enim sit amet, dapibus metus. Nullam sem mi, laoreet at eros non, feugiat interdum nibh. Etiam euismod aliquam magna ac pulvinar. Ut non orci et orci rutrum malesuada. Aenean feugiat maximus sapien, in tincidunt justo dapibus et. Nunc pellentesque lacinia convallis. Duis rutrum justo lorem, at pretium nulla mattis vel. </p>
+                <img id="ouat-storybook" src="once-upon-a-time.jpg" width=250 align="left">
+                <p>Morbi non tellus sodales, blandit quam ac, tincidunt justo. Donec sit amet turpis rhoncus nunc sodales varius lobortis ut turpis. Duis quis cursus sapien. Vivamus laoreet tempor finibus. Suspendisse nisi erat, tincidunt a gravida quis, sollicitudin nec felis. Vestibulum in est quis neque dignissim consequat pharetra sit amet sapien. Cras nec neque quis nibh rutrum fermentum. Nunc congue mattis dignissim. Vivamus semper, massa et ultricies vulputate, risus leo efficitur urna, et varius nisl lorem nec massa. Morbi aliquet eleifend mi a venenatis. Donec a fringilla nisl. Fusce ornare semper faucibus. Maecenas rhoncus velit nec mi venenatis, et iaculis velit aliquam. In et malesuada metus.</p>
+                <p>Aenean est turpis, dapibus nec tempor sit amet, vestibulum laoreet massa. Proin sed vestibulum ante. Aliquam mattis, magna sit amet dignissim sollicitudin, risus turpis gravida ligula, vitae semper erat nisl sit amet metus. Nulla sagittis quam nibh, ut pretium felis sollicitudin in. Sed nibh sem, tincidunt nec aliquam a, suscipit at leo. Sed egestas tincidunt risus, et rutrum eros elementum fermentum. Praesent congue tortor in eros aliquam aliquam et a eros. Curabitur congue ex a libero congue, ut hendrerit eros sollicitudin. Nulla in quam ac neque gravida rutrum. Pellentesque tempor nunc id eleifend sollicitudin.</p>
+            </center>
+        </div>
+        
+         <div class="body-div" id="news-section">
+            <br/>
+            <center>
+                <h1>Breaking News in the Writing World!</h1>
+            </center>
+            <img src="fantastic-beasts.jpg" id="fantastic-beasts" height=200 width=350 align="left" style="margin-left: 10px;">
+            <h3 style="margin-left: 20px; font-family: 'Work Sans', sans-serif; text-align: center;">J.K. Rowling Announces Five-Picture <i>Fantastic Beasts</i> Franchise!</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat consectetur ante ultrices sollicitudin. Vivamus faucibus feugiat efficitur. Sed ac ex blandit, consequat mi ac, suscipit lacus. Donec in nisi est. Proin dui massa, porttitor vel semper vel, dictum sit amet odio. Nulla facilisi. Donec ut ligula sed urna molestie ornare in non urna. Nullam fermentum, leo sit amet malesuada pretium, ligula massa congue diam, vitae tincidunt libero turpis elementum nibh. Praesent vehicula ac lorem non dignissim.</p>
+            <br/>
+            <img src="stephen-king-on-writing.jpg" id="on-writing" height=300 width=275 align="right" style="margin-right: 10px;">
+            <h3 style="margin-left: 20px; font-family: 'Work Sans', sans-serif; text-align: center;">Stephen King's <i>On Writing</i> On Sale At Bookstore!</h3>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque volutpat consectetur ante ultrices sollicitudin. Vivamus faucibus feugiat efficitur. Sed ac ex blandit, consequat mi ac, suscipit lacus. Donec in nisi est. Proin dui massa, porttitor vel semper vel, dictum sit amet odio. Nulla facilisi. Donec ut ligula sed urna molestie ornare in non urna. Nullam fermentum, leo sit amet malesuada pretium, ligula massa congue diam, vitae tincidunt libero turpis elementum nibh. Praesent vehicula ac lorem non dignissim.</p>
+            <p>Curabitur tempus tincidunt est, a efficitur purus volutpat at. Fusce gravida massa et orci dapibus commodo. Suspendisse dictum a neque ut posuere. Nulla accumsan lorem vitae ante finibus, vel congue ligula rutrum. Donec non tellus gravida, ultricies enim sit amet, dapibus metus. Nullam sem mi, laoreet at eros non, feugiat interdum nibh. Etiam euismod aliquam magna ac pulvinar. Ut non orci et orci rutrum malesuada. Aenean feugiat maximus sapien, in tincidunt justo dapibus et. Nunc pellentesque lacinia convallis. Duis rutrum justo lorem, at pretium nulla mattis vel.</p>
+        </div>
+        
+         <div class="body-div" id="events-section">
+            <br/>
+            <center>
+                <h1>Upcoming Events</h1>
+                <table style="width: 100%;">
+                    <tr>
+                        <th>
+                            <div class="event-div"><img src="writing-seminar.jpg" class="event-image" id="writing-seminar"></div>
+                        </th>
+                        <th>
+                            <div class="event-div"><img src="book-festival.jpg" class="event-image" id="book-festival"></div>
+                        </th>
+                        <th>
+                            <div class="event-div"><img src="barnes-and-noble.jpg" class="event-image" id="barnes-and-noble"></div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="event-description">
+                                <h3>Lorem ipsum dolor sit amet!</h3>
+                                <p>Sed ac ex blandit, consequat mi ac, suscipit lacus. Donec in nisi est. Proin dui massa, porttitor vel semper vel, dictum sit amet odio</p>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="event-description">
+                                <h3>Lorem ipsum dolor sit amet!</h3>
+                                <p>Sed ac ex blandit, consequat mi ac, suscipit lacus. Donec in nisi est. Proin dui massa, porttitor vel semper vel, dictum sit amet odio</p>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="event-description">
+                                <h3>Lorem ipsum dolor sit amet!</h3>
+                                <p>Sed ac ex blandit, consequat mi ac, suscipit lacus. Donec in nisi est. Proin dui massa, porttitor vel semper vel, dictum sit amet odio</p>
+                            </div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="event-div"><img src="jrr-tolkien.jpg" class="event-image" id="jrr-tolkien"></div>
+                        </th>
+                        <th>
+                            <div class="event-div"><img src="kapow.jpg" class="event-image" id="kapow"></div>
+                        </th>
+                        <th>
+                            <div class="event-div"><img src="filmmaking.jpg" class="event-image" id="filmmaking"></div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <div class="event-description">
+                                <h3>Lorem ipsum dolor sit amet!</h3>
+                                <p>Sed ac ex blandit, consequat mi ac, suscipit lacus. Donec in nisi est. Proin dui massa, porttitor vel semper vel, dictum sit amet odio</p>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="event-description">
+                                <h3>Lorem ipsum dolor sit amet!</h3>
+                                <p>Sed ac ex blandit, consequat mi ac, suscipit lacus. Donec in nisi est. Proin dui massa, porttitor vel semper vel, dictum sit amet odio</p>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="event-description">
+                                <h3>Lorem ipsum dolor sit amet!</h3>
+                                <p>Sed ac ex blandit, consequat mi ac, suscipit lacus. Donec in nisi est. Proin dui massa, porttitor vel semper vel, dictum sit amet odio</p>
+                            </div>
+                        </th>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        
+         <div class="body-div" id="contact-section">
+            <br/>
+            <center>
+                <h1>Want To Get In Touch?</h1>
+            </center>
+            <div id="contact-form-div">
+                <br/>
+                <form id="user-form" style="margin-left: 10px;">
+                    <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">First Name:</b>
+                    <input type="text" name="first-name"><br/>
+                    <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Last Name:</b>
+                    <input type="text" name="last-name">
+                    <br/><br/>
+                    
+                    <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Gender:</b>
+                    <input type="radio" name="gender" value="male">
+                    <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Male</b>
+                    <input type="radio" name="gender" value="female">
+                    <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Female</b>
+                    <br/><br/>
+                    
+                    <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Are you a writer?</b>
+                    <input type="radio" name="choice" value="yes">
+                    <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Yes</b>
+                    <input type="radio" name="choice" value="no">
+                    <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">No</b>
+                    <br/><br/>
+                    
+                    <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">If yes, please select up to three genres that interest you:</b>
+                    <table>
+                        <tr>
+                            <th>
+                                <input type="checkbox" name="genre" value="science fiction">
+                                <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Science Fiction</b>
+                            </th>
+                            <th>
+                                <input type="checkbox" name="genre" value="fantasy">
+                                <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Fantasy</b>
+                            </th>
+                            <th>
+                                <input type="checkbox" name="genre" value="romance">
+                                <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Romance</b>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" name="genre" value="thriller">
+                                <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Thriller</b>
+                            </th>
+                            <th>
+                                <input type="checkbox" name="genre" value="action">
+                                <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Action</b>
+                            </th>
+                            <th>
+                                <input type="checkbox" name="genre" value="poetry">
+                                <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Poetry</b>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <input type="checkbox" name="genre" value="young-adult">
+                                <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Young Adult</b>
+                            </th>
+                            <th>
+                                <input type="checkbox" name="genre" value="horror">
+                                <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Horror</b>
+                            </th>
+                            <th>
+                                <input type="checkbox" name="genre" value="historical-fiction">
+                                <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Historical Fiction</b>
+                            </th>
+                        </tr>
+                    </table>
+                    <br/>
+                    
+                    <b style="font-family: 'Work Sans', sans-serif; color: white; font-size: 20px;">Any questions or concerns that you have can be submitted through this form below:</b><br/>
+                    <textarea name="comments" rows="11" cols="72" form="user-form"></textarea><br/>
+                    <button type="submit" style="border-style: none; background-color: #800020; color: white; font-size: 20px; cursor: pointer;"><i class="fa fa-paper-plane"></i> Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
