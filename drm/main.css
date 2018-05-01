@@ -1,0 +1,10 @@
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-header {
+  margin: 0 auto;
+  height: 50px;
+  width: 100%;
+  background: orange;
+}
