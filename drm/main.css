@@ -1,10 +1,64 @@
-h1 {
-  font-family: 'Montserrat', sans-serif;
+:root {
+  --cosmic-cobalt: #304487;
+  --whitesmoke: #f5f5f8;
+  --smoky-black: #190E05;
 }
 
-.main-header {
-  margin: 0 auto;
-  height: 50px;
+.cd_section {
+  top: 0; 
+  left: 0; 
+  bottom: 0;
+  right: 0;
   width: 100%;
-  background: orange;
+  height: 100vh;
+  position: absolute;
+}
+
+#landing {
+  background: url(assets/images/cityscape.jpg);
+  background-position: 0 -450px;
+}
+
+#landing_title {
+  margin: 40px auto;
+  color: var(--smoky-black);
+  padding-left: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80px;
+}
+
+#tagline {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+}
+
+#topnav {
+  margin-top: 10px;
+  margin-right: 10px;
+  list-style-type: none;
+  float: right;
+}
+
+#topnav li {
+  display: inline-block;
+  font-size: 17px;
+  font-weight: bolder;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 10px;
+  padding-right: 5px;
+}
+
+#topnav li a {
+  height: 25px;
+  width: 100px;
+  padding: 10px 5px 10px 5px;
+  text-decoration: none;
+  color: var(--smoky-black);
+}
+
+#topnav li a:hover {
+  border-radius: 5%;
+  background-color: var(--smoky-black);
+  color: var(--whitesmoke);
+  transition: all .5s ease;
 }
